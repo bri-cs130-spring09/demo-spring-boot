@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<body>
+<table>
+    <tr>
+        <th>Merchant ID</th>
+        <th>Merchant Name</th>
+    </tr>
+    <tr th:each="merchant: ${merchants}">
+        <td th:text="${merchant.id}">Merchant ID</td>
+        <td th:text="${merchant.name}">Merchant Name</td>
+    </tr>
+</table>
+</body>
+</html>
